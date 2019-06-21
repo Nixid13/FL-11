@@ -67,7 +67,7 @@
         font-style: normal;
         line-height: 20px;
     }
-    
+
     .tm-section-title {
         margin-bottom: 12px;
     }
@@ -161,10 +161,6 @@
         vertical-align: super;
     }
 
-    .gallery-container {
-        background-color: #f5f5f5;
-    }
-
     .box-work:nth-child(even) {
         background-color: #f5f5f5;
     }
@@ -241,5 +237,4 @@
         animation-iteration-count: 1;
         animation-duration: 3s;
     }
-
 }
