@@ -166,7 +166,7 @@
     }
 
     .blocks .boxes .box.box-work {
-        border: 10px solid transparent;
+        padding: 10px;
     }
     .box-work p {
         font-style: italic;
