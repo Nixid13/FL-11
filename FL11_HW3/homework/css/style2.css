@@ -42,8 +42,8 @@ body {
 .header {
   background: url("../img/m-h-night.jpg") no-repeat center;
   background-size: cover;
-  height: 800px;
-  border-radius: 0 0 43% 0; }
+  height: 900px;
+  border-radius: 0 0 40% 0; }
   .header .header-wrap .landing-logo {
     color: #fff;
     padding-top: 20px; }

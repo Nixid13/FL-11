@@ -68,8 +68,8 @@ body {
 .header {
   background: $backgroundBanner;
   background-size: cover;
-  height: 800px;
-  border-radius: 0 0 43% 0;
+  height: 900px;
+  border-radius: 0 0 40% 0;
   .header-wrap {
     @extend %contentWrap;
     .landing-logo {
