@@ -1,0 +1,215 @@
+%buttons {
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  background: map-get($colors, "btnColor");
+  color: #f2f3f7;
+  font-family: $headersFFamily;
+  &:hover {
+    background: lighten(map-get($colors, "btnColor"), 5%);
+  }
+}
+
+%logo {
+  display: flex;
+  align-items: flex-end;
+  img {
+    height: 50px;
+  }
+  p {
+    margin-left: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 28px;
+    font-family: $logoFFamily;
+    font-weight: bold;
+  }
+  span {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+%contentWrap {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+$z-index: ("above": 1, "under" : -1);
+
+@mixin underline($width:1px, $height:1px,
+  $bottom:1px, $right:1px) {
+  &::after {
+    content: '';
+    position: absolute;
+    height: $height;
+    width: $width;
+    right: $right;
+    bottom: $bottom;
+    background-color: map-get($colors, "underlineColor");
+    display: block;
+    z-index: map-get($z-index, "under");
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: map-get($colors, "bodyColor");
+}
+
+.header {
+  background: $backgroundBanner;
+  background-size: cover;
+  height: 800px;
+  border-radius: 0 0 43% 0;
+  .header-wrap {
+    @extend %contentWrap;
+    .landing-logo {
+      color: map-get($colors, "mainTextColor");
+      padding-top: 20px;
+      @extend %logo;
+    }
+    .header_heading {
+      margin-top: 80px;
+      max-width: 600px;
+      font-family: $headersFFamily;
+      font-weight: bold;
+      font-size: 76px;
+      color: map-get($colors, "mainTextColor");
+      line-height: 80px;
+      position: relative;
+      z-index: map-get($z-index, "above");
+      @include underline($width: 320px, $height: 26px,
+      $bottom: 0px, $right: 280px);
+    }
+    .header_text {
+      margin-top: 50px;
+      white-space: pre-line;
+      line-height: 30px;
+      font-family: $logoFFamily;
+      color: map-get($colors, "mainTextColor");
+      font-size: 21px;
+    }
+    .header_button {
+      margin-top: 80px;
+      @extend %buttons;
+    }
+  }
+}
+
+.section {
+  text-align: center;
+  @extend %contentWrap;
+  .section_text {
+    display: inline-block;
+    margin-top: 50px;
+    font-family: $headersFFamily;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    color: map-get($colors, "mainTextColor");
+    @include underline($width: 220px, $height: 15px,
+    $bottom: 10px, $right: 15px);
+  }
+  .section_card_wrap {
+    margin-top: 40px;
+    display: flex;
+    .section_card {
+      max-width: 30%;
+      background: map-get($colors, "cardColor");
+      border-radius: 6px;
+      padding: 18px;
+      margin-right: 1%;
+    }
+    .section_card_img {
+      width: 100%;
+      border-radius: inherit;
+    }
+    .section_card_heading {
+      font-family: $headersFFamily;
+      font-size: 30px;
+      margin: 25px 0;
+      font-weight: 600;
+      display: inline-block;
+      color: #fff;
+    }
+    .section_card_underline {
+      width: 100%;
+      height: 13px;
+      background: map-get($colors, "underlineColor");
+      display: block;
+      margin: -16px auto 0 auto;
+    }
+    .section_card_text {
+      font-family: $sectionCardTextFFamily;
+      line-height: 33px;
+      font-size: 21px;
+      color: map-get($colors, "textColor");
+    }
+  }
+
+  .section_banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px auto -80px auto;
+    max-width: 60%;
+    padding: 50px 130px;
+    background: map-get($colors, "sectionBannerColor");
+    position: relative;
+    border-radius: 8px;
+    .section_banner_text_wrap {
+      text-align: left;
+      .section_banner_heading {
+        font-size: 34px;
+        font-weight: bold;
+        line-height: 0;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+        position: relative;
+        z-index: map-get($z-index, "above");
+        color: map-get($colors, "sectionBannerHeading");
+        font-family: $headersFFamily;
+
+        @include underline($width: 75px, $height: 15px,
+        $bottom: -17px, $right: 270px);
+      }
+      .section_banner_text {
+        color: map-get($colors, "textColor");
+        font-size: 21px;
+        font-family: $sectionCardTextFFamily;
+      }
+    }
+    .section_banner_button {
+      @extend %buttons;
+    }
+  }
+}
+
+.footer {
+  background-color: map-get($colors, "footerColor");
+  padding: 140px 0 70px 0;
+  font-family: $footerFFamily;
+  color: map-get($colors, "textColor");
+  .footer-wrap {
+    @extend %contentWrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer_logo {
+      @extend %logo;
+    }
+    .footer_text {
+      width: 320px;
+      line-height: 25px;
+    }
+  }
+}
