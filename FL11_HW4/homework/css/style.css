@@ -161,7 +161,9 @@ header::after {
 
 .article-image .image {
     width: 100%;
-    margin-bottom: -100px;
+    object-fit: cover;
+    object-position: top;
+
 }
 
 .article .image-likes,
