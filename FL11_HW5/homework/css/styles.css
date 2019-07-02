@@ -208,7 +208,6 @@ a:visited {
 
 .news .news-details {
     padding: 10%;
-
 }
 
 .news .news-header {
@@ -242,13 +241,15 @@ a:visited {
     display: block;
 }
 
+@media only screen and (max-width: 1400px) {
+    .wrapper {
+        max-width: 98%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     html {
         font-size: 8px;
-    }
-
-    .wrapper {
-        max-width: 98%;
     }
 
     .header .burger {
