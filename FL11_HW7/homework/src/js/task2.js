@@ -17,7 +17,6 @@ if (!isGame) {
     alert('You did not become a billionaire, but can.');
 } else if (isGame) {
     while (attempts > 0) {
-        console.log(randNum);
         let usersPick = +prompt(`Choose a roulette pocket number from 0 to ${range}
 Attempts left: ${attempts}
 Total prize: ${prize}$
