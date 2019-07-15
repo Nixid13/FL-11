@@ -72,7 +72,7 @@ function daysBetween(date1, date2) {
 //Task 8
 function getAmountOfAdultPeople(data) {
     const ages = [];
-    const days = 365;
+    const days = 365.26;
     const minAge = 18;
     for (let i = 0; i < data.length; i++) {
         ages.push(Math.floor(daysBetween(new Date(data[i]['birthday']), new Date()) / days));
@@ -106,10 +106,3 @@ function values(obj) {
     }
     return result;
 }
-
-
-
-
-
-
-
