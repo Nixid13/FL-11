@@ -1,6 +1,12 @@
 //Task 0
 function getNumbers(str) {
-    return str.match(/[0-9]/g) || [];
+    const result = [];
+    for (let i = 0; i < str.length; i++) {
+        if (parseInt(str[i])) {
+            result.push(parseInt(str[i]))
+        }
+    }
+    return result;
 }
 
 
