@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i, button {
+    cursor: pointer;
+}
+i {
+    color: cornflowerblue;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.header, .item_task p, .alert {
+    color: deepskyblue;
+}
+
+.header {
+    font-size: 26px;
+    margin: 20px 0 5px 0;
+    text-align: center;
+}
+.alert {
+    opacity: 0;
+}
+
+.add_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.add_form .input_text {
+    width: 90%;
+    height: 40px;
+    border-radius: 3px;
+    padding-left: 10px;
+    border: 1px solid gainsboro;
+    outline: none;
+}
+
+.add_form .add {
+    margin-left: 20px;
+    border: transparent;
+    border-radius: 4px;
+    background-color: lightgray;
+    color: #fff;
+    font-size: 35px;
+    line-height: 0;
+    letter-spacing: 0;
+    padding: 15px 6px 18px 6px;
+    outline: none;
+}
+
+.add_form .add:disabled {
+    opacity: 0.5;
+}
+
+.header_wrap .line {
+    border: none;
+    height: 5px;
+    background-color: rgba(0, 191, 255, 0.3);
+    margin: 15px 0 20px 0;
+}
+
+.todo_items {
+    list-style-type: none;
+}
+
+.todo_items .item {
+    position: relative;
+}
+
+.item .delete {
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.item .item_task {
+    display: flex;
+    align-items: center;
+}
+
+.item_task p {
+    margin: 0 10px 0 5px;
+}
+
+.item_task .checkbox {
+    color: gray;
+    font-size: 28px;
+}
+
+.item_task .edit_task,
+.save,
+.delete {
+    font-size: 25px;
+}
+
+.save_input {
+    display: none;
+}
+
+.save_input input {
+    width: 300px;
+    outline: none;
+}
+
+.save_input .save {
+    margin-left: 5px;
+}
+
+.alert {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
