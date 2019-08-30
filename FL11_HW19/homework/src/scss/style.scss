@@ -1,0 +1,24 @@
+.header {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+
+.userAnswer {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+  .btn {
+    width: 140px;
+    height: 30px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #1e7e34;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      background-color: darken(#1e7e34, 10%);
+    }
+  }
+}
