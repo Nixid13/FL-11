@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: rgba(234, 238, 255, 0.53);
+  padding: 10px;
+  .get {
+    float: right;
+    display: block;
+    background: royalblue;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    &:disabled {
+      background: gray;
+    }
+  }
+
+}

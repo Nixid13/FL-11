@@ -1,0 +1,42 @@
+.pack {
+  display: grid;
+  text-align: center;
+  background: #fcfcfc;
+}
+
+.emoji {
+
+  .big {
+    font-size: 40px;
+    position: absolute;
+
+  }
+  .med {
+    font-size: 30px;
+    position: relative;
+    left: 20px;
+  }
+  .sm {
+    font-size: 20px;
+    right: 20px;
+    top: 10px;
+    position: relative;
+
+  }
+}
+.title {
+  margin-top: 10px;
+}
+
+.get {
+  display: block;
+  margin: 0 auto;
+  background: royalblue;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  &:disabled {
+    background: gray;
+  }
+}

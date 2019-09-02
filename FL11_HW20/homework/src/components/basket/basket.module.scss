@@ -1,0 +1,23 @@
+.wrapper {
+  background: #fcfcfc;
+  .deleteBtn {
+    float: right;
+    color: red;
+    font-family: Arial, 'sans-serif';
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .purchaseBtn {
+    margin-top: 15px;
+    background: royalblue;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    &:disabled {
+      background: gray;
+    }
+  }
+
+}
