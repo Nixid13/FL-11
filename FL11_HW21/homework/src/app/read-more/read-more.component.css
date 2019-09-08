@@ -1,0 +1,29 @@
+
+.heading {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: cornflowerblue;
+}
+.back {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: aqua;
+  background: black;
+}
+.container {
+  margin: 0 auto;
+  max-width: 60%;
+  border: 1px solid #000;
+  display: flex;
+}
+.img, .info {
+  padding: 10px;
+}
+.content {
+  margin: 10px 0;
+}
+.author {
+  margin-top: 10px;
+}

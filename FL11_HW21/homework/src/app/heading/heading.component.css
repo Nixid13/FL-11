@@ -1,0 +1,22 @@
+
+.heading {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: cornflowerblue;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: aqua;
+  background: black;
+}
+.input {
+  margin-right: 10px;
+}

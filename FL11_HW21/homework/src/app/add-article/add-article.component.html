@@ -1,0 +1,38 @@
+<div class="heading">
+  <h2>Create News</h2>
+</div>
+<div class="form-container">
+  <form class="form" [formGroup]="myForm">
+    <div class="left">
+      <div class="header">
+        <p class="header-text">Heading</p>
+        <input type="text" formControlName="title">
+      </div>
+      <div class="short-descr">
+        <p class="shortdescr-text">Short description</p>
+        <input type="text" formControlName="descr">
+      </div>
+      <div class="content">
+        <p>Content</p>
+        <textarea name="" cols="30" rows="10" formControlName="content"></textarea>
+      </div>
+    </div>
+    <div class="right">
+      <div class="date">
+        <p class="date-text">Date</p>
+        <input type="text" formControlName="date">
+      </div>
+      <div class="author">
+        <p class="author-text">Author</p>
+        <input type="text" formControlName="author">
+      </div>
+      <div class="source">
+        <p class="source-text">Source</p>
+        <input type="text" formControlName="source">
+      </div>
+
+      <button class="btn" (click)="onSubmit()" routerLink="">Save</button>
+      <button class="btn" routerLink="">Cancel</button>
+    </div>
+  </form>
+</div>

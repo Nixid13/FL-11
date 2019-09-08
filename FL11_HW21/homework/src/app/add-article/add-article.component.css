@@ -1,0 +1,37 @@
+.heading {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background: cornflowerblue;
+}
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: aqua;
+  background: black;
+}
+.form-container {
+  max-width: 80%;
+  margin: 10px auto;
+  border: 1px solid #000;
+  padding: 10px;
+}
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+.left, .right {
+  width: 90%;
+}
+.form input {
+  width: 80%;
+}
+.btn {
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: aqua;
+  background: black;
+}

@@ -1,0 +1,13 @@
+<div class="heading">
+  <h1>{{heading}}</h1>
+</div>
+<div class="nav">
+  <select  name="source" id="source" (change)="onChange($event)">
+    <option value="" disabled selected hidden>Please Choose...</option>
+    <option  *ngFor="let arr of sourses"  value={{arr.title}}>{{arr.title}}</option>
+  </select>
+
+  <button routerLink="/add" class="btn">Add Article</button>
+</div>
+<app-news></app-news>
+<router-outlet></router-outlet>

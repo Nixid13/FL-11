@@ -1,0 +1,14 @@
+<div *ngFor="let arr of newsArr">
+  <div class="container" *ngIf="arr.source == this.data.getSource()">
+    <div class="img">
+      <img src={{arr.img}} alt="">
+    </div>
+    <div class="info">
+      <p>{{arr.title}}</p>
+      <p>{{arr.descr}}</p>
+      <a routerLink="read" (click)="readMore(arr)">Read more</a>
+    </div>
+    <p>{{arr.date}}</p>
+  </div>
+</div>
+
